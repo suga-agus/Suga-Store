@@ -4,8 +4,8 @@ Website toko online statis, siap dipublikasikan gratis melalui GitHub Pages.
 
 ## Cara mengatur
 1. Buka `index.html`.
-2. Cari bagian `PENGATURAN TOKO` di dalam `<script>`.
-3. Ganti `whatsapp` dengan nomor WhatsApp admin dalam format internasional tanpa `+` (contoh `6281234567890`).
+2. Cari bagian `PENGATURAN TOKO` di dalam `<pengaturan>`.
+3. Ganti `whatsapp` dengan nomor WhatsApp admin dalam format internasional tanpa `+` (contoh `6287828446729`).
 4. Ganti contoh produk pada array `PRODUCTS` dengan produk, harga, deskripsi, kategori, dan foto milik toko.
 5. Untuk rekening, isi `bankName`, `bankAccount`, dan `bankOwner`. Tampilan pembayaran saat ini sengaja meminta pelanggan menunggu konfirmasi admin sebelum transfer.
 6. Untuk QRIS, buat folder `assets`, lalu letakkan gambar QRIS resmi toko di `assets/qris.png`. (Kode dasar ini belum menampilkan QRIS secara publik; admin dapat mengirimkannya lewat WhatsApp setelah konfirmasi.)
