@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="SUGA — toko serba ada. Belanja mudah, praktis, dan nyaman.">
+<title>SUGA — Belanja Lebih Mudah</title>
+<style>
+:root{--ink:#111827;--muted:#6b7280;--line:#e5e7eb;--bg:#f5f6fa;--gold:#d6ad60;--gold2:#f4dfad;--white:#fff;--green:#087f5b;--shadow:0 14px 40px rgba(17,24,39,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.topbar{background:#0b1220;color:#e5e7eb;font-size:12px;padding:9px 5%;display:flex;justify-content:space-between;gap:12px}.topbar b{color:var(--gold2)}header{background:#111827;color:white;position:sticky;top:0;z-index:20;box-shadow:0 5px 20px #0002}.nav{max-width:1200px;margin:auto;padding:17px 24px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:11px;min-width:185px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#f7e2b4,#b98738);display:grid;place-items:center;color:#111827;font-weight:900;font-size:18px}.brand strong{display:block;font-size:18px;letter-spacing:.3px}.brand small{display:block;color:#cbd5e1;font-size:10px;letter-spacing:2px;margin-top:2px}.search{flex:1;display:flex;background:white;border-radius:12px;overflow:hidden;border:1px solid #ffffff30}.search input{width:100%;border:0;outline:0;padding:13px 15px;color:#111827}.search button{border:0;background:var(--gold);padding:0 18px;font-weight:800}.nav-actions{display:flex;gap:10px}.navbtn{border:1px solid #ffffff35;color:white;background:#ffffff0c;border-radius:11px;padding:11px 14px;font-weight:700}.cart-count{background:var(--gold);color:#111827;border-radius:99px;padding:2px 7px;font-size:11px;margin-left:4px}.hero{max-width:1200px;margin:25px auto 0;padding:0 24px}.hero-inner{background:radial-gradient(circle at 85% 20%,#3b4558 0,#182235 38%,#101827 75%);border-radius:24px;min-height:310px;padding:48px 6%;color:white;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative}.hero-inner:after{content:"AS";position:absolute;right:7%;top:5%;font-size:230px;font-weight:900;color:#ffffff08;letter-spacing:-20px}.hero-copy{max-width:540px;position:relative;z-index:1}.eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.06;margin:15px 0}.hero p{color:#cbd5e1;line-height:1.7;max-width:470px}.primary{background:linear-gradient(135deg,#f4dfad,#c99a4c);border:0;color:#111827;padding:13px 20px;border-radius:11px;font-weight:850;box-shadow:0 7px 18px #c99a4c30}.hero-badge{position:relative;z-index:1;width:190px;height:190px;border:1px solid #f4dfad70;border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--gold2);font-weight:800;transform:rotate(9deg);background:#ffffff08}.hero-badge span{font-size:38px;display:block}.wrap{max-width:1200px;margin:0 auto;padding:0 24px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 34px}.benefit{background:white;border:1px solid var(--line);border-radius:15px;padding:17px;display:flex;gap:12px;align-items:center}.benefit .ico{width:40px;height:40px;background:#fbf4e7;border-radius:12px;display:grid;place-items:center;font-size:19px}.benefit b{display:block;font-size:13px}.benefit small{color:var(--muted);font-size:11px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:28px 0 17px}.section-head h2{font-size:25px;margin:0}.section-head p{color:var(--muted);font-size:13px;margin:6px 0 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.chip{border:1px solid var(--line);background:white;color:#4b5563;border-radius:99px;padding:9px 15px;font-size:12px;font-weight:700}.chip.active{background:#111827;color:white;border-color:#111827}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:white;border:1px solid #edf0f4;border-radius:17px;overflow:hidden;transition:.2s;box-shadow:0 4px 15px #11182706}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-img{height:180px;background:linear-gradient(135deg,#f2f3f6,#e5e7eb);display:grid;place-items:center;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover}.product-img .emoji{font-size:64px}.product-info{padding:14px}.tag{font-size:10px;color:#8a682d;background:#fbf3e3;border-radius:5px;padding:5px 7px;font-weight:800}.product h3{font-size:14px;margin:12px 0 5px}.desc{color:var(--muted);font-size:11px;min-height:30px;line-height:1.45}.price-row{display:flex;align-items:center;justify-content:space-between;margin-top:13px}.price{font-weight:900;font-size:15px}.add{width:34px;height:34px;border:0;border-radius:10px;background:#111827;color:white;font-size:20px}.empty{background:white;border:1px dashed #cbd5e1;border-radius:15px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}.lower{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin:38px 0}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.panel h2{margin:0 0 8px;font-size:20px}.panel p{color:var(--muted);font-size:13px;line-height:1.6}.cart-line{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding:12px 0;font-size:13px}.qty{display:flex;align-items:center;gap:8px}.qty button{border:1px solid var(--line);background:white;border-radius:7px;width:26px;height:26px}.total{display:flex;justify-content:space-between;font-weight:900;padding:16px 0;font-size:17px}.wide{width:100%;margin-top:8px}.secondary{background:white;border:1px solid var(--line);padding:12px 17px;border-radius:10px;font-weight:750}.payment-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.pay-option{border:1px solid var(--line);border-radius:12px;padding:13px;font-size:12px}.pay-option b{display:block;margin-bottom:5px}.pay-option small{color:var(--muted);line-height:1.5}.notice{background:#fff8e8;border:1px solid #f1dfb7;border-radius:11px;padding:12px;font-size:11px;color:#75551e;line-height:1.5;margin-top:13px}.footer{background:#101827;color:#cbd5e1;margin-top:45px;padding:35px 24px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer b{color:white}.footer small{color:#94a3b8}.modal-backdrop{display:none;position:fixed;inset:0;background:#0009;z-index:50;align-items:center;justify-content:center;padding:18px}.modal-backdrop.show{display:flex}.modal{background:white;border-radius:18px;max-width:480px;width:100%;padding:24px;max-height:90vh;overflow:auto}.modal h2{margin-top:0}.field{display:block;margin:13px 0}.field span{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.field input,.field select{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;outline-color:#c99a4c}.close{float:right;border:0;background:#f3f4f6;border-radius:8px;padding:7px 10px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111827;color:white;padding:12px 18px;border-radius:10px;z-index:80;display:none;font-size:13px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(3,1fr)}.nav{flex-wrap:wrap;gap:12px}.brand{min-width:0}.search{order:3;flex-basis:100%}.hero-badge{width:140px;height:140px}.hero-badge span{font-size:28px}}
+@media(max-width:620px){.topbar{justify-content:center;text-align:center}.topbar span:last-child{display:none}.nav{padding:13px 16px}.nav-actions{margin-left:auto}.navbtn{padding:9px 10px;font-size:12px}.hero,.wrap{padding-left:15px;padding-right:15px}.hero-inner{padding:32px 24px;min-height:270px}.hero-badge{display:none}.hero h1{font-size:36px}.benefits{grid-template-columns:1fr;gap:9px;margin:15px 0 28px}.benefit{padding:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-img{height:135px}.product-info{padding:11px}.product h3{font-size:13px}.price{font-size:13px}.lower{grid-template-columns:1fr}.section-head h2{font-size:21px}.payment-methods{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>✦ <b>AGUS STORE</b> · Belanja praktis untuk kebutuhan sehari-hari</span><span>Pesanan dibantu langsung oleh admin</span></div>
+<header><nav class="nav">
+  <div class="brand"><div class="logo">AS</div><div><strong>AGUS STORE</strong><small>SHOP • SIMPLE • SMART</small></div></div>
+  <div class="search"><input id="searchInput" placeholder="Cari produk yang kamu butuhkan..." aria-label="Cari produk"><button onclick="renderProducts()">Cari</button></div>
+  <div class="nav-actions"><button class="navbtn" onclick="document.getElementById('catalog').scrollIntoView()">Produk</button><button class="navbtn" onclick="document.getElementById('cartSection').scrollIntoView()">🛒 <span class="cart-count" id="cartCount">0</span></button></div>
+</nav></header>
+<section class="hero"><div class="hero-inner"><div class="hero-copy"><div class="eyebrow">Pilihan praktis, harga bersahabat</div><h1>Temukan yang kamu cari di <span style="color:#f4dfad">SUGA.</span></h1><p>Belanja berbagai kebutuhan dalam satu tempat. Pilih produk, masukkan ke keranjang, lalu kirim pesanan dengan mudah.</p><button class="primary" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">Mulai Belanja&nbsp; →</button></div><div class="hero-badge"><div><span>✦</span>YOUR DAILY<br>SHOPPING<br>DESTINATION</div></div></div></section>
+<main class="wrap">
+<section class="benefits">
+ <div class="benefit"><div class="ico">🛍️</div><div><b>Produk beragam</b><small>Berbagai kebutuhan dalam satu toko</small></div></div>
+ <div class="benefit"><div class="ico">💳</div><div><b>Pembayaran fleksibel</b><small>Transfer bank atau QRIS manual</small></div></div>
+ <div class="benefit"><div class="ico">💬</div><div><b>Admin siap membantu</b><small>Konfirmasi pesanan melalui WhatsApp</small></div></div>
+</section>
+<section id="catalog">
+ <div class="section-head"><div><h2>Jelajahi Produk</h2><p>Pilih produk favoritmu dari katalog SUGA.</p></div><span id="resultCount" style="font-size:12px;color:#6b7280"></span></div>
+ <div class="filters" id="filters"></div><div class="grid" id="productGrid"></div>
+</section>
+<section class="lower">
+ <div class="panel" id="cartSection"><h2>🛒 Keranjang Belanja</h2><p>Periksa pesananmu sebelum melanjutkan ke pembayaran.</p><div id="cartItems"></div><div class="total"><span>Total sementara</span><span id="cartTotal">Rp0</span></div><button class="primary wide" onclick="openCheckout()">Lanjut ke Pemesanan</button><button class="secondary wide" onclick="clearCart()">Kosongkan Keranjang</button></div>
+ <div class="panel"><h2>💳 Metode Pembayaran</h2><p>Pembayaran dilakukan secara manual setelah admin mengonfirmasi ketersediaan produk dan total akhir pesanan.</p><div class="payment-methods"><div class="pay-option"><b>🏦 Transfer Bank</b><small>Nomor rekening dan nama pemilik akan ditampilkan setelah data rekening toko diatur.</small></div><div class="pay-option"><b>▦ QRIS</b><small>Scan QRIS resmi milik toko setelah admin mengirimkan kode pembayaran.</small></div></div><div class="notice"><b>Perhatian:</b> Jangan melakukan transfer sebelum menerima konfirmasi pesanan dan memastikan nama penerima sesuai dengan informasi resmi SUGA.</div></div>
+</section>
+</main>
+<footer class="footer"><div class="footer-inner"><div><b>AGUS STORE</b><p style="font-size:12px">Belanja mudah, praktis, dan nyaman.</p></div><div><small>Hubungi admin untuk informasi stok, ongkir, dan pembayaran.</small><p style="font-size:12px;margin-bottom:0">© <span id="year"></span> SUGA</p></div></div></footer>
+<div class="modal-backdrop" id="checkoutModal"><div class="modal"><button class="close" onclick="closeCheckout()">Tutup ✕</button><h2>Data Pemesan</h2><p style="font-size:12px;color:#6b7280">Isi data berikut. Pesanan akan dikirim ke WhatsApp admin.</p><label class="field"><span>Nama lengkap</span><input id="buyerName" placeholder="Nama kamu"></label><label class="field"><span>Nomor WhatsApp</span><input id="buyerPhone" placeholder="08xxxxxxxxxx" inputmode="tel"></label><label class="field"><span>Alamat pengiriman</span><input id="buyerAddress" placeholder="Alamat lengkap"></label><label class="field"><span>Metode pembayaran</span><select id="payment"><option>Transfer bank (manual)</option><option>QRIS (manual)</option></select></label><label class="field"><span>Catatan (opsional)</span><input id="buyerNote" placeholder="Warna, ukuran, atau catatan lain"></label><div class="notice">Pesanan belum otomatis dibayar. Admin akan mengonfirmasi stok, ongkir, total akhir, dan mengirim instruksi pembayaran.</div><button class="primary wide" onclick="sendOrder()">Kirim Pesanan via WhatsApp</button></div></div>
+<div class="toast" id="toast"></div>
+<script>
+// ================= PENGATURAN TOKO =================
+// Ganti nomor berikut dengan nomor WhatsApp admin.
+// Format: kode negara + nomor, tanpa tanda +, spasi, atau angka 0 di depan.
+// Contoh Indonesia: 6281234567890
+const STORE = {
+  whatsapp: "6281234567890",
+  name: "SUGA",
+  bankName: "NAMA BANK",
+  bankAccount: "0000000000",
+  bankOwner: "NAMA PEMILIK REKENING",
+  qrisImage: "assets/qris.png" // Letakkan gambar QRIS toko di folder assets dengan nama qris.png.
+};
+
+// Ganti contoh produk di bawah dengan produk asli toko.
+// image dapat berupa URL gambar atau file lokal, misalnya "assets/produk-1.jpg".
+const PRODUCTS = [
+ {id:1,name:"Botol Minum Premium",category:"Rumah Tangga",price:45000,description:"Botol praktis untuk aktivitas harian.",image:"https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=700",badge:"Pilihan"},
+ {id:2,name:"Tas Kasual Harian",category:"Fashion",price:89000,description:"Teman simpel untuk kegiatan sehari-hari.",image:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=700",badge:"Favorit"},
+ {id:3,name:"Headphone Wireless",category:"Elektronik",price:149000,description:"Audio praktis untuk menemani aktivitas.",image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700",badge:""},
+ {id:4,name:"Jam Tangan Minimalis",category:"Aksesori",price:125000,description:"Tampilan sederhana dan elegan.",image:"https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700",badge:""},
+ {id:5,name:"Lampu Meja LED",category:"Rumah Tangga",price:65000,description:"Penerangan nyaman untuk meja kerja.",image:"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=700",badge:""},
+ {id:6,name:"Sneakers Kasual",category:"Fashion",price:179000,description:"Gaya santai untuk berbagai kesempatan.",image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700",badge:""},
+ {id:7,name:"Power Bank",category:"Elektronik",price:115000,description:"Daya tambahan saat bepergian.",image:"https://images.unsplash.com/photo-1609592806596-b43bada2f4e4?w=700",badge:""},
+ {id:8,name:"Dompet Simpel",category:"Aksesori",price:59000,description:"Ringkas untuk menyimpan kebutuhan penting.",image:"https://images.unsplash.com/photo-1627123424574-724758594e93?w=700",badge:""}
+];
+
+let cart = {};
+let activeCategory = "Semua";
+const money = n => new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
+const safe = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function renderFilters(){
+ const cats=["Semua",...new Set(PRODUCTS.map(p=>p.category))];
+ document.getElementById("filters").innerHTML=cats.map(c=>`<button class="chip ${c===activeCategory?'active':''}" onclick="setCategory('${safe(c)}')">${safe(c)}</button>`).join("");
+}
+function setCategory(c){activeCategory=c;renderFilters();renderProducts();}
+function renderProducts(){
+ const q=document.getElementById("searchInput").value.toLowerCase().trim();
+ const list=PRODUCTS.filter(p=>(activeCategory==="Semua"||p.category===activeCategory)&&(p.name.toLowerCase().includes(q)||p.description.toLowerCase().includes(q)));
+ document.getElementById("resultCount").textContent=list.length+" produk";
+ document.getElementById("productGrid").innerHTML=list.length?list.map(p=>`
+ <article class="product"><div class="product-img"><img src="${safe(p.image)}" alt="${safe(p.name)}" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=emoji>🛍️</span>'"></div>
+ <div class="product-info">${p.badge?`<span class="tag">${safe(p.badge)}</span>`:""}<h3>${safe(p.name)}</h3><div class="desc">${safe(p.description)}</div><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" aria-label="Tambah ${safe(p.name)}" onclick="addToCart(${p.id})">+</button></div></div></article>`).join(""):`<div class="empty">Produk tidak ditemukan. Coba kata kunci lain.</div>`;
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart();toast("Produk ditambahkan ke keranjang");}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart();}
+function clearCart(){cart={};renderCart();}
+function cartData(){return Object.entries(cart).map(([id,qty])=>({product:PRODUCTS.find(p=>p.id===Number(id)),qty})).filter(x=>x.product);}
+function renderCart(){
+ const data=cartData(),count=data.reduce((s,x)=>s+x.qty,0),total=data.reduce((s,x)=>s+x.product.price*x.qty,0);
+ document.getElementById("cartCount").textContent=count;document.getElementById("cartTotal").textContent=money(total);
+ document.getElementById("cartItems").innerHTML=data.length?data.map(x=>`<div class="cart-line"><div><b>${safe(x.product.name)}</b><br><small style="color:#6b7280">${money(x.product.price)} × ${x.qty}</small></div><div class="qty"><button onclick="changeQty(${x.product.id},-1)">−</button><b>${x.qty}</b><button onclick="changeQty(${x.product.id},1)">+</button></div></div>`).join(""):`<div class="empty" style="margin-top:15px">Keranjang masih kosong. Yuk pilih produk!</div>`;
+}
+function openCheckout(){if(!cartData().length){toast("Keranjang masih kosong");return;}document.getElementById("checkoutModal").classList.add("show");}
+function closeCheckout(){document.getElementById("checkoutModal").classList.remove("show");}
+function sendOrder(){
+ const name=document.getElementById("buyerName").value.trim(),phone=document.getElementById("buyerPhone").value.trim(),address=document.getElementById("buyerAddress").value.trim(),payment=document.getElementById("payment").value,note=document.getElementById("buyerNote").value.trim();
+ if(!name||!phone||!address){toast("Lengkapi nama, nomor WhatsApp, dan alamat");return;}
+ if(!/^[0-9+()\-\s]{8,20}$/.test(phone)){toast("Periksa kembali nomor WhatsApp");return;}
+ const data=cartData(),total=data.reduce((s,x)=>s+x.product.price*x.qty,0);
+ let msg=`Halo ${STORE.name}, saya ingin memesan:\n\n`;
+ data.forEach(x=>msg+=`• ${x.product.name} (${x.qty} x ${money(x.product.price)}) = ${money(x.qty*x.product.price)}\n`);
+ msg+=`\nSubtotal: ${money(total)}\nMetode pembayaran: ${payment}\n\nNama: ${name}\nNo. WhatsApp: ${phone}\nAlamat: ${address}\nCatatan: ${note||"-"}\n\nMohon konfirmasi stok, ongkir, total akhir, dan instruksi pembayaran. Saya akan melakukan pembayaran setelah mendapat konfirmasi.`;
+ const url=`https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(msg)}`;
+ window.open(url,"_blank","noopener");
+}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.style.display="block";setTimeout(()=>el.style.display="none",2300);}
+document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderProducts();});
+document.getElementById("year").textContent=new Date().getFullYear();
+renderFilters();renderProducts();renderCart();
+</script>
+</body>
+</html>
